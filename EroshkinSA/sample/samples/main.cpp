@@ -4,7 +4,8 @@
 using namespace std;
 
 int main() {
-	Complex c(0, 0);
+	Complex c;
+	cin >> c;
 	cout << c;
 	return 0;
 }

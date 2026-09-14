@@ -3,6 +3,7 @@
 
 struct Complex {
 	double re, im;
+	Complex() {};
 	Complex(double, double);
 	Complex(const Complex&);
 	Complex(const Complex&&);
