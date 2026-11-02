@@ -1,5 +1,5 @@
 #include <iostream>
-#include "stack.h"
+#include "postfix_form.h"
 
 using namespace std;
 
@@ -10,6 +10,7 @@ int main()
         cout << "Insert expression: ";
         cin >> s;
         ArithmeticExpression one(s);
+        one.GetPostfixForm();
         one.GetValues();
         cout << s << " = " << one.compute() << endl;
     }
