@@ -67,6 +67,10 @@ public:
 		return (top_idx == -1);
 	}
 
+	int size() const noexcept {
+		return top_idx + 1;
+	}
+
 	T top() const {
 		if (isEmpty()) throw invalid_argument("Stack is empty!");
 		return pMem[top_idx];
